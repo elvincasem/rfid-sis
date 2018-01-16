@@ -26,16 +26,26 @@
                                             <h5 class="widget-heading text-light-op"><em><?php echo $scholar_profile['course'];?></em></h5> -->
                                         </div>
                                     </div>
-                                   <!-- <div class="widget-content widget-content-full border-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><small>Status:<strong><?php //echo $scholar_profile['grantee_status'];?></strong></small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><small>Year Applied: <strong><?php //echo $scholar_profile['yearapplied'];?></strong> </small></h3>
-                                            </div>
-                                        </div>
-                                    </div>
+									
+									
+						
+				   <div class="widget-content widget-content-full border-bottom">
+						<div class="row text-center">
+							<div class="col-xs-12 push-inner-top-bottom border-right">
+							<?php echo form_open_multipart('student/do_upload');?> 
+							   <form action = "" method = "">
+							   <input type="hidden" id="fileid" name="fileid" value="<?php echo $studentdetails['studID'];?>">
+							   <input type="hidden" id="dbstudid" name="dbstudid" value="<?php echo $studid;?>">
+							   <input type = "file" name = "studentimage" id = "studentimage" size = "20" /> 
+
+								<input type = "submit" value = "upload"/> 
+							   </form>
+							   
+							</div>
+							
+						</div>
+					</div>
+									<!-- 
                     <div class="widget-content border-bottom">
                     <h4>Scholarship</h4>
                     <p>
